@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Linux Commands</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,900" rel="stylesheet">
+    <script src="../assets/js/menuhider.js"></script> 
+    <script>
+        window.onscroll = function(){
+            console.log("send help");
+            var count = 300;
+            var main = document.getElementById('main');
+            var x = main.scrollTop;
+            console.log(x);
+            if (count < x) {
+                    document.getElementById(mainText).style.color="blue";
+                    console.log("Does this if work");
+            }
+        }
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("quickTop").style.display = "block";
+                document.getElementById("head").style.display = "none";
+            } 
+            else {
+                document.getElementById("quickTop").style.display = "none";
+                document.getElementById("head").style.display = "block";
+            }
+        }
+    
+    </script>
+</head>
+<body>
+    <div id="top"></div>
+    <header id="stick">
+        <div id="head">
+            <div id="headColor">
+            </div><!-- End of< div for the headColor -->
+            <div id="headContent">
+                <img src=logo2.png alt="logo" id="logo">
+                <div id="navBar" class="topnav">
+                    
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">How To</a></li>                        
+                        <li><a href="#">Fun With Linux</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuHider()">&#9776;</a></li>
+                    </ul>   
+                </div><!-- End of div for the navigation bar -->
+            </div><!-- End of div for the headContent -->
+        </div><!-- End of div for the head -->       
+    </header><!-- End of Header -->
+    <div id="hero">
+            <div id="heroText">
+                <h1>
+                    Linux Commands
+                </h1>
+            </div>
+        </div>
+    <div id="back"></div>
+    <div id="main">
+        <div id="mainText">
+        <h1>
+            
+        </h1>
+        <p>
+             While there are many flavors and distributions of Linux that do not require use of the command line in order for everyday use, however the command lines still remains an essential tool for every Linux user. While some commands are complex and require time and effort to learn all of their functions and uses, there are some commands that are very simple to use and learn, yet are just as useful. Here are some of the most commonly used bash commands for everyday use that every Linux user should know, along with example pictures taken directly from a Linux command line:
+        </p>
+        <div id="quickLinks">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#db">cat</a></li>
+                <li><a href="#ub">cd</a></li>
+                <li><a href="#lm">ls</a></li>
+                <li><a href="#fd">mkdir</a></li>
+                <li><a href="#al">mv</a></li>
+                <li><a href="#al">rm</a></li>
+            </ul>
+        </div>
+        <h2 id="cat">Cat:</h2>
+        <p>
+            “cat” is a very simple command used in order to read a file of any kind directly in the command line. It makes things simple for reading small files without having to open them in another application or program.
+            <a href="https://www.debian.org/releases/stretch/installmanual">here</a>
+        </p>
+        </div>
+    </div>
+    <footer>
+        <a id="quickTop" href="#top">&#x2191;</a>
+    </footer>
+</body>    
+</html>
