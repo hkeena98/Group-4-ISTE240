@@ -1,0 +1,18 @@
+#cardContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+.card {
+    width: 32%;
+    background-color: white;
+    -moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.52);
+    box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.52);
+}
+#main {
+    background-color: transparent;
+}
+#back {
+    background-color: transparent;
+}
