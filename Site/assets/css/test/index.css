@@ -94,52 +94,8 @@ header {
     border: 2px solid white;
 }
 
-/*Hides icon for menu hider*/
-.topnav .icon {
-    display: none;
-}
-
-li a, .dropbtn {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-    border-radius: 10px;
-    background-color: #e7aa48;
-    color: dimgray !important;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a {
-    color: dimgray !important;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover{
-    background-color: #f1f1f1;
-}
-
-.show {display:block;}
-
 #hero{
-    background-image: url(../images/indexbackground.png);
+    background-image: url(indexbackground.png);
     height:800px;
     width: 100%;
     top: -100px;
@@ -186,34 +142,6 @@ li.dropdown {
     padding-bottom: 30px;
     
 }
-
-#quickLinks ul {
-    margin: 0px;
-    padding: 0;
-    list-style: none;
-    
-}
-
-#quickLinks li {
-    display: inline-block;
-    margin-left: 2%;
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 1.2em;
-}
-
-#quickLinks a {
-  color: darkgray;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: .8em;
-    
-}
-
-
 #mainText{
     width: 80%;
     left: 0;
@@ -244,57 +172,4 @@ li.dropdown {
     font-size: 1.2em;
     padding-bottom: 10px;
     text-indent: 2em;
-}
-
-#picBox{
-    display: inline-block;
-}
-
-#pic{
-    max-width:25em;
-    max-height:20em;
-}
-
-#quickTop{
-    display:none;
-    float:right;
-    margin-right:2em;
-    padding:1em;
-    border:none;
-    border-radius: 10px;
-    opacity: .6;
-    background: #272727;
-    color: white;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 1.2em;
-    text-decoration: none;
-    
-}
-
-
-/*When screen gets smaller than 900px, hide menue navigation links and show menu icon*/
-@media screen and (max-width: 900px) {
-    .topnav a {display: none;}
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0px;
-        top: 0px;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
 }
